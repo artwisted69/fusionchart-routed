@@ -1,0 +1,92 @@
+
+<ng-container #reportsContainer></ng-container>
+
+
+<ng-template #reportsMain>
+    <div id="reports">
+        <div class="report-item">
+            <div class="card" (click)="viewSales()">
+                <div class="icon text-center">
+                    <mat-icon [inline]="true">monetization_on</mat-icon>
+                </div>
+                <div class="name">Sales</div>
+            </div>
+        </div>
+        <div class="report-item">
+            <div class="card" >
+                <div class="icon text-center">
+                    <mat-icon [inline]="true">list</mat-icon>
+                </div>
+                <div class="name">Inventory</div>
+            </div>
+        </div>
+        <!-- <div class="report-item" [@animate]="{value:'*',params:{duration:'300ms',y:'400px'}}"> -->
+        <div class="report-item">
+            <div class="card">
+                <div class="icon text-center">
+                    <mat-icon inline="true">people</mat-icon>
+                </div>
+                <div class="name">Human Resources</div>
+            </div>
+        </div>
+       
+    </div>
+</ng-template>
+
+<ng-template #sales>
+    <div class="p-12">
+        <button mat-button class="accent" (click)="goBack()">Back</button>
+    </div>
+    <div id="reports">
+        <div class="report-item">
+            <div class="card" [@animate]="{value:'*',params:{duration:'300ms',y:'400px'}}" (click)="loadCompLoader()">
+                <div class="icon text-center">
+                    <mat-icon inline="true">insert_chart_outlined</mat-icon>
+                </div>
+                <div class="name">Stock Turns</div>
+            </div>
+        </div>
+        <div class="report-item">
+            <div class="card" [@animate]="{value:'*',params:{duration:'300ms',y:'400px'}}" (click)="loadSample()">
+                <div class="icon text-center">
+                    <mat-icon inline="true">insert_chart_outlined</mat-icon>
+                </div>
+                <div class="name">Revenue</div>
+            </div>
+        </div>
+        <div class="report-item">
+            <div class="card" [@animate]="{value:'*',params:{duration:'300ms',y:'400px'}}" >
+                <div class="icon text-center" >
+                    <mat-icon inline="true">insert_chart_outlined</mat-icon>
+                </div>
+                <div class="name">Margins</div>
+            </div>
+        </div>
+
+        <div class="report-item">
+            <div class="card" [@animate]="{value:'*',params:{duration:'300ms',y:'400px'}}">
+                <div class="icon text-center" >
+                    <mat-icon inline="true">insert_chart_outlined</mat-icon>
+                </div>
+                <div class="name">Wins/ Loss</div>
+            </div>
+        </div>
+        <div class="report-item">
+            <div class="card" [@animate]="{value:'*',params:{duration:'300ms',y:'400px'}}">
+                <div class="icon text-center" >
+                    <mat-icon inline="true">insert_chart_outlined</mat-icon>
+                </div>
+                <div class="name">Wins/ Loss</div>
+            </div>
+        </div>
+        <div class="report-item">
+            <div class="card" [@animate]="{value:'*',params:{duration:'300ms',y:'400px'}}">
+                <div class="icon text-center" >
+                    <mat-icon inline="true">insert_chart_outlined</mat-icon>
+                </div>
+                <div class="name">Wins/ Loss</div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+

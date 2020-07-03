@@ -1,0 +1,15 @@
+#reports {
+    width:100%;
+    border:1px solid red;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .report-item {
+        flex:1;
+        .border:1px solid blue;
+    }
+
+}

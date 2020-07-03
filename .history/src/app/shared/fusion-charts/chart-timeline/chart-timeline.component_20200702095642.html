@@ -1,0 +1,12 @@
+<div class="p-12">
+    <button mat-button class="accent" (click)="goBack()">Back</button>
+</div>
+<fusioncharts #fusionChart
+  [width]="width"
+  [height]="height"
+  [type]="type"
+  [dataSource]="dataSource"
+  dataEmptyMessage="Loading data please wait"
+  placeholder=" "
+>
+</fusioncharts>

@@ -1,0 +1,13 @@
+<div class="p-12">
+    <button mat-button class="accent" (click)="goBack()">Back</button>
+</div>
+<div>
+    <fusioncharts #chart
+  width="100%"
+  height="600"
+  type="Column3d"
+  (update)="update($event)"
+  [dataSource]="dataSource"
+>
+</fusioncharts>
+</div>

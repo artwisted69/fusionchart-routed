@@ -1,0 +1,16 @@
+#reports {
+    width:100%;
+    border:1px solid red;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .report-item {
+        flex:25% 0 ;
+        border:1px solid blue;
+        padding: 1em;
+    }
+
+}

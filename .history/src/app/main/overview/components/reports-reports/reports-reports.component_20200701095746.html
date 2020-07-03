@@ -1,0 +1,57 @@
+
+<ng-container #reportsContainer></ng-container>
+
+
+<ng-template #reportsMain>
+    <div id="reports">
+        <div class="report-item">
+            <div class="card" (click)="viewSales()">
+                <div class="icon text-center">
+                    <mat-icon inline="true">monetization_on</mat-icon>
+                </div>
+                <div class="name">Sales</div>
+            </div>
+        </div>
+        <div class="report-item">
+            <div class="card">
+                <div class="icon text-center">
+                    <mat-icon inline="true">list</mat-icon>
+                </div>
+                <div class="name">Inventory</div>
+            </div>
+        </div>
+        <div class="report-item">
+            <div class="card">
+                <div class="icon text-center">
+                    <mat-icon inline="true">people</mat-icon>
+                </div>
+                <div class="name">Human Resources</div>
+            </div>
+        </div>
+       
+    </div>
+</ng-template>
+
+<ng-template #sales>
+    <div>
+        <button mat-button class="accent">Back</button>
+    </div>
+    <div id="reports">
+        <div class="report-item">
+            <div class="card">
+                <div class="icon text-center">
+                    <mat-icon inline="true">monetization_on</mat-icon>
+                </div>
+                <div class="name">Stock Turns</div>
+            </div>
+        </div>
+        <div class="report-item">
+            <div class="card">
+                <div class="icon text-center">
+                    <mat-icon inline="true">list</mat-icon>
+                </div>
+                <div class="name">Totals</div>
+            </div>
+        </div>
+    </div>
+</ng-template>

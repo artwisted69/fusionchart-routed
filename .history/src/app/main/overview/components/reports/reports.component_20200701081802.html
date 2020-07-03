@@ -1,0 +1,47 @@
+<div id="dashboard-project" class="page-layout simple right-sidebar" fxLayout="row">
+
+    <!-- CENTER -->
+    <div class="center" fusePerfectScrollbar>
+        <!-- CONTENT -->
+        <div class="content">
+
+            <mat-tab-group dynamicHeight>
+
+                <mat-tab label="Dashboard">
+
+                    <div class="widget-group" fxLayout="row wrap" fxFlex="100" *fuseIfOnDom [@animateStagger]="{value:'50'}">
+                        <app-reports-dashboard></app-reports-dashboard>
+                    </div>
+                    <!-- / WIDGET GROUP -->
+
+                </mat-tab>
+
+                <mat-tab label="Marketing Trends">
+
+                    <!-- WIDGET GROUP -->
+                    <div class="widget-group" fxLayout="row wrap" fxFlex="100" *fuseIfOnDom [@animateStagger]="{value:'50'}">
+                        <app-reports-marketing-trends></app-reports-marketing-trends>
+                    </div>
+                    <!-- / WIDGET GROUP -->
+
+                </mat-tab>
+
+                <mat-tab label="Reports">
+
+                    <!-- WIDGET GROUP -->
+                    <div class="widget-group"  fxFlex="100" fxLayoutAlign="center center" *fuseIfOnDom >
+                        <app-reports-reports></app-reports-reports>
+                    </div>
+                    <!-- / WIDGET GROUP -->
+
+                </mat-tab>
+            </mat-tab-group>
+
+        </div>
+        <!-- / CONTENT -->
+
+    </div>
+    <!-- / CENTER -->
+
+
+</div>
